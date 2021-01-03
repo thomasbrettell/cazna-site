@@ -80,6 +80,7 @@ a {
     top: 55%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding: 0 0.75rem 0 0;
 }
 
 /* About */
