@@ -1,20 +1,18 @@
+// Navbar navigation functionality
 $(".navbar-brand").click(function () {
-    $(document).scrollTop(0);
+    window.location.href = 'index.html';
 });
 
-$(window).scroll(function () {
-    scrollPos = $(document).scrollTop();
-});
-
-// Navbar
 $(".nav-link").click(function (e) {
+    console.log((e.target.innerText).toLowerCase());
+
     switch (e.target.innerText) {
         case "ABOUT":
             $(document).scrollTop($("#about")[0].offsetTop - 66);
             break;
 
         case "CONTACT":
-            $(document).scrollTop(0);
+            $(document).scrollTop($("#contact")[0].offsetTop - 66);
             break;
 
         case "PRODUCTS":

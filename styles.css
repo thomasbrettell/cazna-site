@@ -18,7 +18,7 @@ h3 {
 }
 
 a {
-    color: black;
+    /* color: black; */
     cursor:pointer
 }
 
@@ -30,6 +30,11 @@ a {
     max-width: 1048px;
     margin: auto;
     padding: 0 .75rem
+}
+
+.paddingless-wrapper {
+    max-width: 1048px;
+    margin: auto;
 }
 
 .section-padding {
@@ -68,22 +73,78 @@ a {
 /* Introduction */
 #introduction {
     height: 65vh;
-    background-image: url('assets/pexels-photo-388415.jpeg');
     background-size: cover;
     background-position: 50% 65%;
     color: white;
 }
 
+.index-image {
+    background-image: url('assets/pexels-photo-388415.jpeg');
+}
+
+.up-range-image {
+    background-image: url('assets/up-range/uprange-intro-image.jpeg'); 
+}
+
 .intro-text {
     margin: 0;
-    position: absolute;
-    top: 55%;
+    position: relative;
+    top: 70%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 0 0.75rem 0 0;
 }
 
+.intro-text-rangeup-position {
+    top: 30%;
+}
+
+.introduction-section-height {
+    height: 100%;
+}
+
 /* About */
+
+/* Contact */
+#contact {
+}
+
+.row {
+    /* align-items: center; */
+}
+
+.contact-col {
+    display: flex;
+    justify-content: center;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Address */
+#address {
+    background-color: #f4f4f4;
+}
+
+.address-col {
+    align-items: center;
+}
+
+.address-contents {
+    margin: .75rem;
+}
 
 /* Products */
 #products {
@@ -100,6 +161,14 @@ a {
     overflow: hidden;
 }
 
+/* up-range */
+/* Introduction */
+.header-logo {
+    height: 100%;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
 /* Footer */
 #footer {
     background-color: #fafafa;
@@ -111,4 +180,10 @@ a {
     font-weight: 300;
     color: #666;
     line-height: 1;
+}
+
+/* The Range */
+.card-logo-padding {
+    padding: 20px;
+    object-fit: fill;
 }
