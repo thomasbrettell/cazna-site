@@ -32,11 +32,6 @@ a {
     padding: 0 .75rem
 }
 
-.paddingless-wrapper {
-    max-width: 1048px;
-    margin: auto;
-}
-
 .section-padding {
     padding: 3rem 0;
 }
@@ -138,12 +133,16 @@ a {
     background-color: #f4f4f4;
 }
 
-.address-col {
+.address-row {
     align-items: center;
 }
 
-.address-contents {
-    margin: .75rem;
+.address-col {
+    margin-top: 1rem
+}
+
+.map-col {
+    padding: 0;
 }
 
 /* Products */
