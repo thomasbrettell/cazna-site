@@ -23,4 +23,4 @@ $(".nav-link").click(function (e) {
             $(document).scrollTop($("#services")[0].offsetTop - 66);
             break;
     }
-})
+});
